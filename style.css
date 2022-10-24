@@ -109,7 +109,7 @@ a {
 
     margin-top: 20px;
 
-    z-index: 20;
+    z-index: 21;
 
     font-family: 'Jetbrains Mono', sans-serif;
 }
@@ -125,4 +125,30 @@ a {
 
 .red-text {
     color: #c10000
+}
+
+@media screen and (max-width: 730px) {
+    .main-container {
+        padding-top: 0;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .logo-container {
+        margin: 0;
+        padding: 2rem 0;
+
+        justify-content: center;
+        align-items: center;
+
+        width: 100vw;
+        background: #f5f5f5;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .text-line {
+        font-size: 4vw;
+    }
 }
